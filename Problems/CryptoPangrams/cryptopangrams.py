@@ -39,14 +39,11 @@ def solve_cryptopangram(ciphers: [int]) -> str:
 
 def main() -> None:
     """
-    Th main wrapper function to solve the test set.
+    Driver function.
     :return: None
     """
-    # First line has number of test cases in the set
-    num_tests = int(input())
-
     # For each test case in the set, solve it.
-    for test_num in range(1, num_tests + 1):
+    for test_num in range(1, int(input()) + 1):
         # N, L in the next line.
         N, L = map(int, input().split())
 
