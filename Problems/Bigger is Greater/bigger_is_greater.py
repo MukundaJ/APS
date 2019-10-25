@@ -68,8 +68,6 @@ def main():
         word = input()
         result = biggerIsGreater(word)
         print(result)
-        with open('hyp', 'a') as f:
-            f.write(result + '\n')
 
 
 if __name__ == '__main__':
