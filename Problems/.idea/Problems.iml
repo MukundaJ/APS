@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Trouble Sort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/magic_square" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bigger is Greater" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Number of Factors" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

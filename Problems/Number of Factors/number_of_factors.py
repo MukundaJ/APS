@@ -77,7 +77,7 @@ def _prime_factors(num: int):
         num //= 2
 
     # Take care of all the odd composite numbers.
-    for i in range(3, int(num ** 0.5) + 1):
+    for i in range(3, int(num ** 0.5) + 1, 2):
         while not num % i:
             __factors.append(i)
             num //= i
