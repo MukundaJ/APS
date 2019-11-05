@@ -88,6 +88,15 @@ def delivery_man_optimized(A, B, X, Y, N):
 
 
 def delivery_man_optimized_1(A, B, X, Y, N):
+    """
+    Find the maximum tip andy and bob can make for N orders.
+    :param A: Tips for Andy for an order.
+    :param B: Tips for Bob for an order.
+    :param X: The maximum # of orders Andy can take.
+    :param Y: The maximum # of orders Bob can take.
+    :param N: The Total # of Orders
+    :return: The maximum tip Andy and Bob can make together.
+    """
     # Find the differences in tips, and reverse sort them.
     diff = sorted([a - b for a, b in zip(A, B)], reverse=True)
     # Consider the max tips = sum of any one of Andy's or Bob's tips.
