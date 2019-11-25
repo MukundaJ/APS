@@ -9,6 +9,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Number of Factors" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Delivery Man" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/String Similarity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Best Time to Buy and Sell Stock IV" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marbles" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
