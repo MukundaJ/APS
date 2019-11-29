@@ -27,10 +27,15 @@ def main():
     Driver function.
     :return: None
     """
+    # For every test case,
     for test_num in range(1, int(input()) + 1):
+        # Get the length of the list,
         list_len = int(input())
+        # Get teh factors.
         *arr, = map(int, input().split())
+        # Solve if trouble sort works for the given input.
         result = solve_trouble(arr, list_len)
+        # Output the result.
         print('Case #{}: {}'.format(test_num, result))
 
 
