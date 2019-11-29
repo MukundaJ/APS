@@ -128,10 +128,15 @@ def main():
     Driver function.
     :return: None
     """
+    # For each test case,
     for num_test in range(1, 1 + int(input())):
+        # Get the length of the list,
         _len = int(input())
+        # Get the factors,
         *factors, = map(int, input().split())
+        # Find the number of factors,
         result = solve_number_of_factors(factors)
+        # Output the result.
         print(result)
 
 
