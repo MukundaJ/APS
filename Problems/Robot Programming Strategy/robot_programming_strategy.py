@@ -1,8 +1,8 @@
-def solve_robot_programming_strategy(moves: [str]) -> str:
+def solve_robot_programming_strategy(ops: [str]) -> str:
     """
     Finds a winning strategy to defeat all other robots given their moves,
     if possible.
-    :param moves: A list of strings representing the moves of each of the robot
+    :param ops: A list of strings representing the moves of each of the robot
     at the time denoted byt the string index.
     :return: The winning strategy (set of moves to make) if possible else
     'IMPOSSIBLE'.
@@ -11,10 +11,10 @@ def solve_robot_programming_strategy(moves: [str]) -> str:
     strategy, time = '', 0
 
     # As long as there is an opponent left,
-    while moves:
+    while ops:
         # Get the set of unique moves that can be made by all the robots at the
         # time step.
-        letters = set(s[time % len(s)] for s in moves)
+        letters = set(s[time % len(s)] for s in ops)
 
         # If at any time-step, there are opponents making all the 3 different
         # moves possible, we would loose to at-least one of the opponents no
@@ -60,7 +60,7 @@ def solve_robot_programming_strategy(moves: [str]) -> str:
                 return strategy[-1] == 'R'
 
         # Keep the moves of the opponents not defeated yet.
-        moves = [move for move in moves if not defeated(move[time % len(move)])]
+        ops = [move for move in ops if not defeated(move[time % len(move)])]
         # increment the time-step
         time += 1
 
