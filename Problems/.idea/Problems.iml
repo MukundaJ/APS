@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Best Time to Buy and Sell Stock IV" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marbles" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Array Transform" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Forming Magic Square" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
