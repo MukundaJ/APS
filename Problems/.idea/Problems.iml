@@ -23,6 +23,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Merge k Sorted Lists" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Coin Change" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Trapping Rain Water" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Lowest Common Ancestor" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
