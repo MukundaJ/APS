@@ -6,15 +6,14 @@ def cultural_programme(entries: [int], exits: [int]) -> int:
     :param exits: A list denoting the exit times of people.
     :return: The maximum number of people occupying the hall.
     """
-    # Have all the entry and exit times in a list, sorted by time.
-    records = sorted(entries + exits)
     # Vars to hold,
     # people -> The number of people in the hall any time.
     # max_people -> The maximum number of people in the hall over the course of
     # the programme.
     people, max_people, entry_set = 0, 0, set(entries)
-    # For every record.
-    for record in records:
+    # Have all the entry and exit times in a list, sorted by time.
+    # For every record,
+    for record in sorted(entries + exits):
         # If a person enters a room, increment people by 1.
         # else the person must have exited the room so we decrement people by 1.
         # This is from the fact that all times will be unique since only one
