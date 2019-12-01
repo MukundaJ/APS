@@ -25,6 +25,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Trapping Rain Water" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Lowest Common Ancestor" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Password Cracker" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Bead Ornaments" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
