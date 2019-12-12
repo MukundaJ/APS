@@ -8,12 +8,21 @@ def num_super_six_substrings_optimal(s: str) -> int:
     :param s: The string to be whose super substrings are to be found.
     :return: The total number of super substrings of s.
     """
+    # a -> holds the sum of digits modulo 3
+    # count holds the count of the super 6 substrings
     a, n, x, count = [0] * 3, len(s), 0, 0
+    # Iterate through s, and memorize every values of sum of all the
+    # prefixes % 3 and update a.
     for i in range(n):
         digit = int(s[i])
         x = (x + digit) % 3
         if digit % 2 == 0: a[x] += 1
     x = 0
+    # Finally we iterate through s again and
+    # notice that is  s[i] == '0' only one string is valid starting at i
+    # i.e. s[i] itself.
+    # Otherwise, we find all the prefixes beginning at i, having the same
+    # sum modulo % 3 value, for which we can use our precomputed array a.
     for i in range(n):
         if s[i] == '0':
             count += 1
