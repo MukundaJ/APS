@@ -64,7 +64,7 @@ def substrings(s: str) -> [str]:
     :param s: The string whose substrings are to be returned.
     :return: All the substrings of the string s.
     """
-    return (s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1))
+    return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1)]
 
 
 def main():

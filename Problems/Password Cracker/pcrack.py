@@ -38,3 +38,23 @@ def passwordCracker(passwords, loginAttempt, memo={}):
             else:
                 memo[loginAttempt] = 'WRONG PASSWORD'
                 return memo[loginAttempt]
+
+
+if __name__ == '__main__':
+
+    t = int(input().strip())
+
+    for t_itr in range(t):
+        n = int(input().strip())
+
+        passwords = input().rstrip().split()
+
+        loginAttempt = input()
+
+        result = passwordCracker(passwords, loginAttempt)
+        if result != False:
+            print(' '.join(result))
+        else:
+            print('WRONG PASSWORD')
+
+        print('"' + " ".join(result) + '"')

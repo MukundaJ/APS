@@ -31,7 +31,7 @@ def bipartite_graphs(n: int, m: int, d: int, D: int) -> str:
     for vertex in range(remaining):
         result.append(f'{vertex + 1} {(vertex + min_deg) % n + 1}')
 
-    # return tte result
+    # return the result
     return '\n'.join(result)
 
 
