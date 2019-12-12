@@ -14,9 +14,8 @@ def num_super_six_substrings_optimal(s: str) -> int:
     # Iterate through s, and memorize every values of sum of all the
     # prefixes % 3 and update a.
     for i in range(n):
-        digit = int(s[i])
-        x = (x + digit) % 3
-        if digit % 2 == 0: a[x] += 1
+        x = (x + int(s[i])) % 3
+        if int(s[i]) % 2 == 0: a[x] += 1
     x = 0
     # Finally we iterate through s again and
     # notice that is  s[i] == '0' only one string is valid starting at i
@@ -28,9 +27,8 @@ def num_super_six_substrings_optimal(s: str) -> int:
             count += 1
         else:
             count += a[x]
-        digit = int(s[i])
-        x = (x + digit) % 3
-        if digit % 2 == 0: a[x] -= 1
+        x = (x + int(s[i])) % 3
+        if int(s[i]) % 2 == 0: a[x] -= 1
     return count
 
 
