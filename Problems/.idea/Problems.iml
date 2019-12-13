@@ -35,6 +35,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Forgone Solution" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/You Can Go Your Own Way" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Reaching Points" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/The Next Palindrome" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
