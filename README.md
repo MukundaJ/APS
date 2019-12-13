@@ -1,2 +1,2 @@
 # Algorithmic Problem Solving
-## Solutions in to the study in the ./Problems folder
+## Solutions in the Problems folder
