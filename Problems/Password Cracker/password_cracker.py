@@ -40,3 +40,29 @@ def passwordCracker(passwords, loginAttempt, memo={}):
     # Otherwise no combination is possible for the given attempt.
     memo[loginAttempt] = False
     return memo[loginAttempt]
+
+
+def main():
+    """
+    Driver function.
+    :return: None
+    """
+    # For all the test cases,
+    for _ in range(int(input())):
+        # Get the number of users.
+        n = int(input().strip())
+        # get the passwords for all the users.
+        passwords = input().rstrip().split()
+        # get the loginAttempt
+        loginAttempt = input()
+        # get the result.
+        result = passwordCracker(passwords, loginAttempt, {})
+        # Output the result.
+        if result is not False:
+            print(' '.join(result))
+        else:
+            print('WRONG PASSWORD')
+
+
+if __name__ == '__main__':
+    main()
