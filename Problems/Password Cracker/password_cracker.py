@@ -15,12 +15,15 @@ def passwordCracker(passwords, loginAttempt, memo={}):
     # If we already have the answer return it.
     if loginAttempt in memo: return memo[loginAttempt]
 
+    if loginAttempt == '':
+        memo[loginAttempt] = []
+        return memo[loginAttempt]
+
     # If the attempted password is already a valid password, return it.
     if loginAttempt in passwords:
         memo[loginAttempt] = [loginAttempt]
         return memo[loginAttempt]
 
-    # For every password,
     for password in passwords:
         _len = len(password)
 
@@ -30,11 +33,10 @@ def passwordCracker(passwords, loginAttempt, memo={}):
             result = passwordCracker(passwords, loginAttempt[_len:], memo)
 
             # If we find a valid combination, return.
-            if result != 'WRONG PASSWORD':
+            if result != False:
                 memo[loginAttempt] = [password] + result
                 return memo[loginAttempt]
 
-            # Otherwise no combination is possible for the given attempt.
-            else:
-                memo[loginAttempt] = 'WRONG PASSWORD'
-                return memo[loginAttempt]
+    # Otherwise no combination is possible for the given attempt.
+    memo[loginAttempt] = False
+    return memo[loginAttempt]
